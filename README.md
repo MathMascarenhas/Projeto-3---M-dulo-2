@@ -1,9 +1,9 @@
 # Link do Deploy: [https://new--way.herokuapp.com/](https://new--way.herokuapp.com/)
 
+##NewWay
 
-# POÉDEX
-
-Um projeto teste para armazenar dados de Pokémos, assim como editar tais dados.
+O projeto se trata de uma plataforma de divulgação de modelos que fogem do padrão convencional das passarelas de moda e tem como 
+objetivo praticar 4 operações do CRUD 
 
 ## Começando
 
