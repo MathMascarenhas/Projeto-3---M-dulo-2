@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleCreate.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <nav>
+        <h1>NewWay</h1>
+
+        <ul>
+            <li><a href="/">INÍCIO</a></li>
+            <li><a href="#modelos">MODELOS</a></li>
+            <li><a href="#cadastro">FAÇA PARTE</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+    <h2>CADASTRO</h2>
+    <form action="/create" method="post">
+        <label for="nome">Nome do modelo</label>
+        <input type="text" id="nome" name="nome" required>
+
+         <label for="imagem1">Link da imagem de apresentação</label>
+         <input type="text" id="imagem1" name="imagem1"  required>
+
+         <label for="imagem2">Link da imagem de apresentação P&B</label>
+         <input type="text" id="imagem2" name="imagem2" required>
+
+         <label for="instagram">Instagram</label>
+         <input type="text" id="instagram" name="instagram"  required>
+
+         <label for="linkInstagram">Link do Instagram</label>
+         <input type="text" id="linkInstagram" name="linkInstagram" required>
+
+         <label for="descricao">Apresentação</label>
+         <input type="text" id="descricao" name="descricao" required>
+
+         <button id="btnCriar" type="submit">CRIAR</button>
+
+      </form>
+    </main>
+</body>
+</html>

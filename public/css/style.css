@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Monoton&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Josefin Sans', sans-serif; 
+}
+ 
+body {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-black-background-simple-texture-image_556938.jpg);
+    background-repeat: repeat;
+}
+
+nav {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 1.5rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: azure;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 3rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: azure;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  nav ul li {
+    transition: 0.5s, ease-in-out;
+  }
+  
+  nav ul li:hover{
+    transform: scale(1.2);
+  }
+
+
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#apresentação {
+  display: flex;
+  flex-direction: column;
+ }
+
+main section#apresentação h2{
+ margin-top: 10rem;
+ color:azure;
+ font-weight: 300;
+ text-align: center;
+ padding: 2rem;
+ font-size: 2rem;
+}
+
+main section#apresentação p{
+  color:azure;
+  font-weight: 300;
+  text-align: justify;
+  padding: 2rem;
+  font-size: 1.5rem;
+ }
+
+  main section#modelos {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  main section#modelos h2 {
+      width: 100%;
+      color: azure;
+      font-size: 2rem;
+      font-weight: 300;
+      text-align: center;
+  }
+
+  main section#modelos div.modelo {
+    width: 20rem;
+    box-shadow: 5px 5px 5px 5px #00000085;
+    padding: 1rem;
+    margin: 5rem 0 5rem 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: azure;
+    transition: 0.5s, ease-in-out;
+  } 
+
+  main section#modelos div.modelo img {
+    width: 95%;
+  }
+
+  main section#modelos div.modelo h3{
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+  } 
+
+  main section#modelos div.modelo:hover{
+      background-color: azure;
+      color: black;
+  }
+
+  main section#modelos div.modelo a {
+      width: 90%;
+      height: 100%;
+      z-index: 10;
+      text-align: center;
+      text-decoration: none;
+      padding: 1rem;
+      background-color: grey;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: black;
+  }
+
+  section#cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10rem;
+  }
+
+  section#cadastro h2 {
+    color:azure;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  section#cadastro p {
+    color:azure;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    font-weight: 200;
+    margin-top: 2rem;
+  }
+
+  section#cadastro a{
+    padding: 0.6rem 0rem 0.6rem 0;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: azure;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    margin-top: 6rem;
+    width: 30%;
+  }
+
+  section#cadastro a:hover{
+    background-color: rgb(70, 70, 70);
+    color: azure;
+  }
+
+  @media (max-width: 682px) {
+    nav h1 {
+      font-size: 1rem;
+    }
+
+    nav ul li a {
+      padding: 0.5rem;
+      font-size: 0.5rem;
+    }
+
+    main section#modelos div.modelo{
+      width: 70%;
+    }
+
+    section#cadastro a{
+      font-size: 0.8rem;
+    }
+    section#cadastro h2 {
+      font-size: 1.5rem;
+    }
+
+    section#cadastro p {
+      font-size: 1rem;
+    }
+  }

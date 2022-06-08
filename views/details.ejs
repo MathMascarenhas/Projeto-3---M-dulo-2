@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleDetails.css">
+    <title>Detalhes</title>
+</head>
+<body>
+    <nav>
+        <h1>NewWay</h1>
+        <ul>
+            <li><a href="/">INÍCIO</a></li>
+            <li><a href="/#modelos">MODELOS</a></li>
+            <li><a href="/#cadastro">FAÇA PARTE</a></li>
+        </ul>
+    </nav>
+    
+    <main> 
+
+        <section>
+            <article>
+                <h2><%= lista[id].nome %></h2>
+                <p><%= lista[id].descricao %></p>
+            </article>
+
+            
+                <p>Instagram - <a id="insta" href="<%= lista[id].instagramLink %>"><%= lista[id].instagram %></a></p>
+            
+        <div id="botoes">           
+            <a id="editar" href="/update/<%= id %>">Editar</a>
+            <a id="apagar" href="/delete/<%= id %>">Deletar</a>
+        </div>            
+        
+        </section>
+       
+    </main>
+</body>
+</html>

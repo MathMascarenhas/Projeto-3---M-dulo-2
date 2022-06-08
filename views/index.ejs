@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto 3</title>
+</head>
+<body>
+    <nav>
+        <h1>NewWay</h1>
+
+        <ul>
+            <li><a href="/">INÍCIO</a></li>
+            <li><a href="#modelos">MODELOS</a></li>
+            <li><a href="#cadastro">FAÇA PARTE</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <% if(mensagem != ""){ %>
+            <section id="mensagem">
+              <p><%=mensagem%></p>
+              <span id="close">&times;</span>
+            </section>
+         <% } %>
+
+        <section id="apresentação">
+            <h2>Qual a proposta da NewWay?</h2>
+            <p>A NewWay surge como uma plataforma de divulgação
+            de modelos que fogem do padrão convencional das passarelas
+            seja por questões de gênero ou por conta da construção do mito 
+            do corpo. We are looking for a new way!
+            </p>
+        </section>
+
+        <section id="modelos">
+
+            <h2>MODELOS</h2>
+
+            <% lista.forEach((modelo) => { %>
+            <div class="modelo">
+                <img src="<%= modelo.imagem1 %>" alt="Imagem" 
+                onmouseover="this.src='<%= modelo.imagem2 %>'"
+                onmouseout="this.src='<%= modelo.imagem1 %>'">
+                <h3><%= modelo.nome %></h2>
+                <a id="details" href="/details/<%= modelo.id %>">VER MAIS</a>
+            </div>
+            <% })%>
+
+        </section>
+
+
+        <section id="cadastro">
+                <h2>QUER SE CADASTRAR NA PLATAFORMA?</h2>
+                <p>Acesse a página de cadastro através do botão abaixo, lembre-se que todas as
+                    informações solicitados no formulário são essenciais para construção do seu perfil
+                </p>
+                <a id="details" href="/create">CADASTRAR</a>
+        </section>
+
+    </main>
+</body>
+</html>

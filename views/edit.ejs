@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Objetos </title>
+    <link rel="stylesheet" href="/css/styleEdit.css">
+</head>
+<body>
+    
+    <nav>
+        <h1>NewWay</h1>
+
+        <ul>
+            <li><a href="/">INÍCIO</a></li>
+            <li><a href="/#modelos">MODELOS</a></li>
+            <li><a href="/#cadastro">FAÇA PARTE</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <h2>EDITE AS INFORMAÇÕES</h2>
+              <form action="/update/<%= id %>" method="POST">
+                  <label for="nome">Nome do modelo</label>
+                  <input type="text" id="nome" name="nome" value="<%= lista[id].nome%>" required>
+  
+                   <label for="imagem1">Link da imagem de apresentação</label>
+                   <input type="text" id="imagem1" name="imagem1" value="<%= lista[id].imagem1%>" required>
+
+                   <label for="imagem2">Link da imagem de apresentação P&B</label>
+                   <input type="text" id="imagem2" name="imagem2" value="<%= lista[id].imagem2%>" required>
+
+                   <label for="instagram">Instagram</label>
+                   <input type="text" id="instagram" name="instagram" value="<%= lista[id].instagram %>" required>  
+  
+                   <label for="linkInstagram">Link do Instagram</label>
+                   <input type="text" id="linkInstagram" name="linkInstagram" 
+                   value="<%= lista[id].instagramLink%>" required>
+
+                   <label for="apresentação">Apresentação</label>
+                   <input type="text" id="apresentação" name="apresentação" value="<%= lista[id].descricao %>" required>
+  
+                   <button id="btnAtualizar" type="submit">Atualizar</button>
+              </form> 
+
+    </main>
+</body>
+</html>

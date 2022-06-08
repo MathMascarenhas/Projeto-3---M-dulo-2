@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Monoton&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+nav {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 1.5rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: azure;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 3rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: azure;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  nav ul li {
+    transition: 0.5s, ease-in-out;
+  }
+  
+  nav ul li:hover{
+    transform: scale(1.2);
+  }
+
+body {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-black-background-simple-texture-image_556938.jpg);
+    background-repeat: repeat;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(71, 71, 71, 0.795);
+    width:70%;
+    height: 50%;
+    margin-top: 3rem;
+}
+
+section h2 {
+    text-align: center;
+    color: azure;
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-weight: 300;
+}
+
+section p {
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: azure;
+    font-weight: 200;
+}
+
+section a {
+    text-decoration: none;
+    color: azure;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+section a#insta:hover{
+    color: black;
+}
+
+section div#botoes {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+section div#botoes a#editar {
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 1rem;
+    background-color: azure;
+    border: solid 1px rgb(70, 70, 70);
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+  
+  section div#botoes a#apagar {
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 1rem;
+    background-color: azure;
+    border: solid 1px rgb(70, 70, 70);
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+
+  section div#botoes a#editar:hover {
+    border: solid 10px green(70, 70, 70);
+    color: green;
+  }
+
+  section div#botoes a#apagar:hover {
+    border: solid 10px red(70, 70, 70);
+    color: red;
+  }
+
+  @media (max-width: 682px) {
+    nav h1 {
+        font-size: 1rem;
+    }
+  
+    nav ul li a {
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    section p {
+      font-size: 1rem;
+    }
+ 
+    section a {
+      font-size: 1rem;
+    }
+}
